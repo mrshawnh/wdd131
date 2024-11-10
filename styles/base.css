@@ -8,9 +8,7 @@
     --color2: #F4ECD6;
 }
 
-body {
-    max-width: 1000px;
-}
+
 
 /* font-family: "Lato", serif;
   font-weight: 100; */
@@ -48,6 +46,7 @@ nav a:hover {
 }
 
 main {
+    max-width: 1000px;
     display: grid;
     grid-template-columns: 2fr 1fr;
 }
