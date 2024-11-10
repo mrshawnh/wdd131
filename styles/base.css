@@ -8,6 +8,10 @@
     --color2: #F4ECD6;
 }
 
+body {
+    max-width: 1000px;
+}
+
 /* font-family: "Lato", serif;
   font-weight: 100; */
 
