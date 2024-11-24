@@ -1,0 +1,57 @@
+:root {
+    --background-color1: #847996;
+    --background-color2: #88B7B5;
+    --color1: #A7CAB1;
+    --color2: #F4ECD6;
+}
+
+body {
+    background-color: var(--background-color2);
+    color: var(--color2);
+}
+
+header {
+    background-color: var(--background-color1);
+    text-align: center;
+    padding: 1rem;
+}
+
+#hero-image h2 {
+    background-color: var(--background-color2);
+}
+
+#hero-image img {
+    width: 95%;
+    height: 95%;
+    border: 5px solid var(--background-color1);
+    display: block;
+    margin: .5rem auto .5rem auto;
+}
+
+#data {
+    text-align: center;
+    background-color: #847996;
+    padding: .5rem 0 .5rem 0;
+    max-width: 500px;
+    margin: 0 auto 0 auto;
+
+}
+
+#weather {
+    background-color: #847996;
+    text-align: center;
+    background-color: #847996;
+    padding: .5rem 0 .5rem 0;
+    max-width: 500px;
+    margin: 0 auto .3rem auto;
+}
+
+#weather img {
+    width: 100px;
+}
+
+footer {
+    background-color: var(--background-color1);
+    text-align: center;
+    padding: .3rem 0 .3rem 0;
+}

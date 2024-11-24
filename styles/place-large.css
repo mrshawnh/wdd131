@@ -1,0 +1,23 @@
+@media screen and (min-width: 640px) {
+
+    #hero-image {
+        position: relative;
+    }
+
+
+    #data {
+        position: absolute;
+        top: 1rem;
+        left: 4rem;
+        width: 200px;
+        background-color: rgba(255, 255, 255, 0.2);
+    }
+
+    #weather {
+        position: absolute;
+        bottom: 5rem;
+        right: 4rem;
+        width: 200px;
+        background-color: rgba(255, 255, 255, 0.2);
+    }
+}
