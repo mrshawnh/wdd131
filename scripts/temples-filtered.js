@@ -6,6 +6,8 @@ hamButton.addEventListener('click', () => {
     hamButton.classList.toggle('open');
 });
 
+const cards = document.querySelector('#cards');
+
 const temples = [
     {
         templeName: "Aba Nigeria",
@@ -88,3 +90,75 @@ const temples = [
             "https://churchofjesuschristtemples.org/assets/img/temples/manila-philippines-temple/manila-philippines-temple-42957.jpg"
     }
 ];
+
+
+
+
+
+const templeCards = (temples) => {
+    temples.forEach((temple) => {
+
+        let card = document.createElement('section');
+        let tName = document.createElement('h2');
+        let loc = document.createElement('p');
+        let date = document.createElement('p');
+        let templeArea = document.createElement('p');
+        let img = document.createElement('img');
+
+        tName.textContent = `${temple.templeName}`;
+        loc.textContent = `Location: ${temple.location}`;
+        date.textContent = `Dedicated: ${temple.dedicated}`;
+        templeArea.textContent = `Size: ${temple.area} sq ft`;
+
+        img.setAttribute('src', temple.imageUrl);
+        img.setAttribute('alt', `${temple.templeName} Temple`);
+        img.setAttribute('loading', 'lazy');
+        img.setAttribute('width', '250');
+        img.setAttribute('height', '100');
+
+        card.appendChild(tName);
+        card.appendChild(img);
+        card.appendChild(loc);
+        card.appendChild(date);
+        card.appendChild(templeArea);
+
+        cards.appendChild(card);
+    });
+
+}
+
+
+const home = document.querySelector('#home');
+const old = document.querySelector('#old');
+const newTemples = document.querySelector('#new');
+const large = document.querySelector('#large');
+const small = document.querySelector('#small');
+
+home.addEventListener('click', () => {
+    templeCards(temples);
+});
+
+old.addEventListener('click', () => {
+    let oldTemples = temples.filter(temple => new Date(temple.dedicated).getFullYear() < 1900);
+    templeCards(oldTemples);
+});
+
+newTemples.addEventListener('click', () => {
+    let newT = temples.filter(temple => new Date(temple.dedicated).getFullYear() > 2000);
+    templeCards(newT);
+});
+
+large.addEventListener("click", () => {
+    const LargeTemples = temples.filter(temple => temple.area > 90000)
+    templeCards(LargeTemples);
+
+});
+small.addEventListener("click", () => {
+    const smallTemples = temples.filter(temple => temple.area < 10000)
+    templeCards(smallTemples);
+});
+
+
+
+
+

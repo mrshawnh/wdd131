@@ -17,7 +17,8 @@ body {
 
 
 body h1,
-h2 {
+h2,
+p {
     text-align: center;
     color: var(--color1);
     font-family: "Chakra Petch", sans-serif;
@@ -26,29 +27,7 @@ h2 {
 
 }
 
-body h1 {
-    text-align: left;
-    margin-left: 1rem;
-}
 
-figure {
-    display: block;
-    margin: 0 auto 0 auto;
-}
-
-img {
-    max-width: 350px;
-    border: 3px solid var(--background-color2);
-}
-
-figcaption {
-    color: var(--color2);
-    text-align: center;
-    margin: .3rem 0 .3rem 0;
-    font-family: "Chakra Petch", sans-serif;
-    font-weight: 300;
-    font-style: normal;
-}
 
 #hamburger::before {
     content: "☰";
@@ -100,4 +79,19 @@ footer {
     font-family: "Chakra Petch", sans-serif;
     font-weight: 300;
     font-style: normal;
+    margin-top: .5rem;
+}
+
+#cards section {
+    display: block;
+    text-align: center;
+    background-color: var(--background-color2);
+    width: 80%;
+    max-width: 550px;
+    margin: .5rem auto 0 auto;
+}
+
+#cards h2,
+p {
+    color: var(--color2);
 }
