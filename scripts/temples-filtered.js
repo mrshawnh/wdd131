@@ -96,6 +96,7 @@ const temples = [
 
 
 const templeCards = (temples) => {
+    document.querySelector('#cards').innerHTML = '';
     temples.forEach((temple) => {
 
         let card = document.createElement('section');
