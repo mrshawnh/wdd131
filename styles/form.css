@@ -1,0 +1,58 @@
+:root {
+    --background-color1: #847996;
+    --background-color2: #88B7B5;
+    --color1: #A7CAB1;
+    --color2: #F4ECD6;
+}
+
+main {
+    background-color: var(--background-color1);
+}
+
+h1 {
+    text-align: center;
+    color: var(--color2);
+    padding-top: 1rem;
+}
+
+footer {
+    color: var(--color2);
+}
+
+.form fieldset {
+    background-color: var(--background-color2);
+    color: var(--color2);
+    border: 1px solid black;
+    border-radius: 6px;
+    padding: 0 1rem;
+    max-width: 600px;
+    margin: 2rem auto 2rem auto;
+    padding: 1rem 1rem 1rem 1rem;
+}
+
+.form div {
+    font-size: 1.5rem;
+    padding: .3rem 0 .3rem 0
+}
+
+.form label {
+    display: block;
+    font-size: 1rem;
+}
+
+.form input[type="submit"] {
+    border: none;
+    background-image: linear-gradient(var(--color1), var(--background-color1));
+    color: #fff;
+    border-radius: 6px;
+    padding: .8rem;
+    width: 96%;
+    max-width: 400px;
+    margin: 1rem 2% 2rem 2%;
+    box-shadow: 1px 1px 4px #999;
+    appearance: none;
+}
+
+.form span {
+    color: darkblue;
+}
