@@ -1,0 +1,48 @@
+:root {
+    --background-color: #AA7DCE;
+    --color: #F5D7E3;
+    --color2: #F4A5AE;
+    --font: "Chakra Petch", serif;
+    --style1: normal;
+    --style2: italic;
+    --weight1: '400';
+    --weight2: '600';
+}
+
+main {
+    background-color: var(--background-color);
+}
+
+h1,
+h2 {
+    color: var(--color);
+    text-align: center;
+    margin-top: 1rem;
+    font-family: var(--font);
+    font-weight: var(--weight2);
+    font-style: var(--style2);
+}
+
+p,
+li {
+    color: var(--color2);
+    text-align: center;
+    font-family: var(--font);
+    font-weight: var(--weight1);
+    font-style: var(--style1);
+}
+
+li {
+    list-style: none;
+}
+
+#wireframes {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+#wireframes img {
+    height: 500px;
+    width: 400px;
+    margin: .5rem auto .5rem auto;
+}
