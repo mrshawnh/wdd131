@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta title="WDD 131 - Dynamic Web Fundamentals - Journal page - Marinduque's Traveler's Guide">
+    <meta name="desciption" content="WDD 131- Dynamic Web Fundamentals | Shawn Henrie | Journal Entry page, create entries and be able to display and sort entries>
+    <link rel=" preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@300;600&display=swap" rel="stylesheet">
+    <link rel=" stylesheet" href="styles/marinduque.css">
+    <link rel="stylesheet" href="styles/marinduque-large.css">
+    <script src="scripts/getdates.js" defer></script>
+    <script src="scripts/journal.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <h1>Marinduqe Travelers Guide</h1>
+        <nav>
+            <a href=" index.html">Home</a>
+            <a href="things-to-do.html">Travel</a>
+            <a href="journal.html">Journal</a>
+        </nav>
+    </header>
+    <main>
+        <h1>Journal Entry Page</h1>
+        <form id="form">
+            <fieldset>
+                <div>Date</div>
+                <label><input type="text" id="date" name="date" placeholder="JAN-01-2024"></label>
+                <label><textarea name="journalEntry" id="journalEntry" cols="50" rows="15"
+                        placeholder="Enter journal"></textarea></label>
+                <button type="submit" id="button">Submit Entry</button>
+            </fieldset>
+
+        </form>
+        <div id="line"></div>
+        <div id="entries">
+            <div>Entry Count: <span id="entryCount"></span></div>
+            <button id="old">2024</button>
+            <button id="news">2025</button>
+        </div>
+
+        <section id="journalEntries"></section>
+    </main>
+    <footer>
+        <p>&copy; <span id="year"></span> Shawn Henrie - Boise,Idaho</p>
+        <p>Last Modification: <span id="lastModified"></span></p>
+    </footer>
+</body>
+
+</html>
